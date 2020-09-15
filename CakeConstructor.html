@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="components/Constructor.js"></script>
+    <script src="components/Selector.js"></script>
+    <script src="components/CheckList.js"></script>
+    <script src="components/ConstructorWindow.js"></script>
+    <link rel="stylesheet" href="CakeConstructor.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <div id="root">
+        <constructor :tiers-structures="tiersStructures"
+                 :tastes="tastes"
+                 :fillings="fillings"
+                 :selected-properties="selectedProperties"
+                 :forms="forms"
+                 :covers="covers"
+                 :toppings="toppings"
+                 :berries="berries"
+                 :decors="decors"
+                 :active-selectors="activeSelectors"
+                 :berrie-price="berriePrice"
+                 :decor-price="decorPrice"
+                 @select-property="selectProperty"
+                 @activate-selector="activateSelector"
+                 @add-features="addFeatures"
+                 @save-and-buy="saveAndBuy">
+        </constructor>
+    </div>
+    <script src="CakeConstructor.js"></script>
+</body>
+</html>
